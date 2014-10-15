@@ -1,5 +1,5 @@
 Name:		kmouth
-Version:	4.14.1
+Version:	4.14.2
 Release:	1
 Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
@@ -37,6 +37,9 @@ for user defined phrasebooks.
 %makeinstall_std -C build
 
 %changelog
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.14.2-1
+- New version 4.14.2
+
 * Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.14.1-1
 - New version 4.14.1
 
