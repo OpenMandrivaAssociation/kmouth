@@ -1,6 +1,6 @@
 Name:		kmouth
-Version:	4.13.3
-Release:	1
+Version:	4.14.3
+Release:	2
 Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
 Group:		Graphical desktop/KDE
@@ -37,6 +37,15 @@ for user defined phrasebooks.
 %makeinstall_std -C build
 
 %changelog
+* Tue Nov 11 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.14.3-1
+- New version 4.14.3
+
+* Wed Oct 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.14.2-1
+- New version 4.14.2
+
+* Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.14.1-1
+- New version 4.14.1
+
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 2:4.13.3-1
 - New version 4.13.3
 
