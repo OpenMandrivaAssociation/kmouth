@@ -1,5 +1,5 @@
 Name:		kmouth
-Version:	15.08.3
+Version:	15.12.0
 Release:	1
 Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
