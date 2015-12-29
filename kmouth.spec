@@ -1,6 +1,6 @@
 Name:		kmouth
 Version:	15.12.0
-Release:	1
+Release:	2
 Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
 Group:		Graphical desktop/KDE
