@@ -1,5 +1,5 @@
 Name:		kmouth
-Version:	16.04.0
+Version:	16.04.1
 Release:	1
 Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
