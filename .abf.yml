@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kmouth-17.12.1.tar.xz: a0b0a0f5f7fa1d6399b285349c12dd2a288eb650
+sources:
+  kmouth-17.12.2.tar.xz: e677597c3ef453ede859d39858e5b3f50a161814
