@@ -13,6 +13,8 @@ BuildRequires:	cmake cmake(ECM) ninja
 BuildRequires:	cmake(KF5Completion) cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5I18n)
 BuildRequires:	cmake(KF5KIO) cmake(KF5WidgetsAddons) cmake(KF5XmlGui)
 BuildRequires:	cmake(Qt5Core) cmake(Qt5Gui) cmake(Qt5PrintSupport) cmake(Qt5TextToSpeech) cmake(Qt5Widgets) cmake(Qt5Xml)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5Crash)
 
 %description
 KMouth is a program which enables persons that cannot speak to let their
