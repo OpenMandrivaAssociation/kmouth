@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmouth
-Version:	 17.12.2
+Version:	 18.04.2
 Release:	1
 Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
@@ -30,6 +30,7 @@ for user defined phrasebooks.
 %{_datadir}/kmouth
 %{_datadir}/kxmlgui5/kmouth
 %{_datadir}/icons/*/*/*/*
+%{_datadir}/metainfo/org.kde.kmouth.appdata.xml
 %{_mandir}/man1/kmouth.1*
 
 %prep
