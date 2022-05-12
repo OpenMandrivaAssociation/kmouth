@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmouth
-Version:	22.04.0
+Version:	22.04.1
 Release:	1
 Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
