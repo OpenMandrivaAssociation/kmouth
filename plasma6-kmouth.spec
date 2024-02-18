@@ -1,13 +1,20 @@
+%define git 20240218
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		plasma6-kmouth
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Summary:	A type-and-say front end for speech synthesizers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
 URL:		http://www.kde.org/applications/utilities/kmouth/
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/accessibility/kmouth/-/archive/%{gitbranch}/kmouth-%{gitbranchd}.tar.bz2#/kmouth-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kmouth-%{version}.tar.xz
+%endif
 BuildRequires:	cmake cmake(ECM) ninja
 BuildRequires:	cmake(KF6Completion) cmake(KF6Config) cmake(KF6ConfigWidgets) cmake(KF6CoreAddons) cmake(KF6I18n)
 BuildRequires:	cmake(KF6KIO) cmake(KF6WidgetsAddons) cmake(KF6XmlGui)
@@ -32,7 +39,7 @@ for user defined phrasebooks.
 %{_mandir}/man1/kmouth.1*
 
 %prep
-%autosetup -p1 -n kmouth-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n kmouth-%{?git:%{gitbranchd}}%{!?git:%{version}}
 
 %build
 %cmake \
