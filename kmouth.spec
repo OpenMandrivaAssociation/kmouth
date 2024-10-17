@@ -7,7 +7,7 @@ Epoch:		2
 Summary:	A type-and-say front end for speech synthesizers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
-URL:		http://www.kde.org/applications/utilities/kmouth/
+URL:		https://www.kde.org/applications/utilities/kmouth/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake cmake(ECM) ninja
 BuildRequires:	cmake(KF5Completion) cmake(KF5Config) cmake(KF5ConfigWidgets) cmake(KF5CoreAddons) cmake(KF5I18n)
