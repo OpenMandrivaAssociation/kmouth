@@ -9,7 +9,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	A type-and-say front end for speech synthesizers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
-URL:		http://www.kde.org/applications/utilities/kmouth/
+URL:		https://www.kde.org/applications/utilities/kmouth/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/accessibility/kmouth/-/archive/%{gitbranch}/kmouth-%{gitbranchd}.tar.bz2#/kmouth-%{git}.tar.bz2
 %else
