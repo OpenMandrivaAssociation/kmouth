@@ -5,7 +5,7 @@
 
 Name:		plasma6-kmouth
 Version:	24.12.3
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Summary:	A type-and-say front end for speech synthesizers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and GFDL
