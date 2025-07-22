@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		kmouth
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	A type-and-say front end for speech synthesizers
 Group:		Graphical desktop/KDE
@@ -22,6 +22,11 @@ BuildRequires:	cmake(Qt6Core) cmake(Qt6Gui) cmake(Qt6PrintSupport) cmake(Qt6Text
 BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6Crash)
 
+%rename plasma6-kmouth
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KMouth is a program which enables persons that cannot speak to let their
 computer speak, e.g. mutal people or people who have lost their voice. It has a
@@ -37,16 +42,3 @@ for user defined phrasebooks.
 %{_datadir}/icons/*/*/*/*
 %{_datadir}/metainfo/org.kde.kmouth.appdata.xml
 %{_mandir}/man1/kmouth.1*
-
-%prep
-%autosetup -p1 -n kmouth-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html --with-man
